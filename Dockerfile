@@ -4,6 +4,7 @@ FROM mono
 RUN apt-get update && apt-get install -y --no-install-recommends \
 	apt-utils \
 	zip \
+	unzip \
 	jq \
 	python3 \
 	python3-serial \
