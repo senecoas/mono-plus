@@ -1,5 +1,9 @@
-FROM mono
 FROM python:3
+WORKDIR /
+RUN which python3
+
+FROM mono
+COPY --from=0 / .
 
 # ODBC packages for debian 10
 RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - && \
