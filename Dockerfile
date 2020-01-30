@@ -1,3 +1,4 @@
+# https://docs.docker.com/develop/develop-images/multistage-build/#use-multi-stage-builds
 FROM python:3
 WORKDIR /
 RUN which python3
