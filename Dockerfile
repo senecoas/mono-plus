@@ -29,7 +29,8 @@ RUN echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bash_profile && \
 RUN pip3 install \
 	pyserial \
 	pyodbc \
-	requests
+	requests \
+	tornado
 
 # Clean up
 RUN apt-get clean
