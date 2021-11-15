@@ -27,7 +27,7 @@ RUN echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bash_profile && \
 	/bin/bash -c "source ~/.bashrc"
 
 RUN pip3 install \
-	paramiko
+	paramiko \
 	pyserial \
 	pyodbc \
 	requests \
